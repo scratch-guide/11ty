@@ -1,0 +1,24 @@
+{
+  "name": "11ty",
+  "version": "1.0.0",
+  "description": "11ty version of the guide site in development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scratch-guide/11ty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scratch-guide/11ty/issues"
+  },
+  "homepage": "https://github.com/scratch-guide/11ty#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
