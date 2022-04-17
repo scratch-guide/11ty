@@ -1,0 +1,24 @@
+# https://dev.to/ndesmic/making-a-personal-site-from-start-to-publish-with-eleventy-and-github-2ld4
+# https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions
+
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: TartanLlama/actions-eleventy@v1.1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./build 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
