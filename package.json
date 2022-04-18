@@ -18,7 +18,7 @@
     "url": "https://github.com/scratch-guide/11ty/issues"
   },
   "homepage": "https://github.com/scratch-guide/11ty#readme",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
   }
 }
