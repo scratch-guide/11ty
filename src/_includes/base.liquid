@@ -10,7 +10,14 @@
 </head>
 
 <body>
-	{{ content | safe }}
+	<nav>
+		<ul>
+		{% for item in collections.all %}
+			<li><a href="{{ item.url }}">{{ item.url }}</a></li>
+		{% endfor %}
+		</ul>
+	</nav>
+	{{ content }}
 	<footer>
 		<div>
 			<p>&copy; {% year %} {{ meta.siteName }}{% if meta.authorName %} • {{ meta.authorName }}{% endif %}</p>
