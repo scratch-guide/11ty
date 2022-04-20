@@ -10,14 +10,19 @@
 </head>
 
 <body>
-	<nav>
-		<ul>
-		{% for item in collections.all %}
-			<li><a href="{{ item.url }}">{{ item.url }}</a></li>
-		{% endfor %}
-		</ul>
-	</nav>
-	{{ content }}
+	<div class="main-wrapper">
+		<nav class="navbar">
+			{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+				activeAnchorClass: "current-page",
+				activeKey: eleventyNavigation.key
+			}) | safe }}
+		</nav>
+		<main>
+			<div class="content-wrapper">
+				{{ content | safe }}
+			</div>
+		</main>
+	</div>
 	<footer>
 		<div>
 			<p>&copy; {% year %} {{ meta.siteName }}{% if meta.authorName %} • {{ meta.authorName }}{% endif %}</p>
@@ -27,3 +32,8 @@
 </body>
 
 </html>
+<!-- 
+	przekierowanie:
+	a) strona 404 z przekazywaniem danych przez localStorage
+	b) okno dialogowe z dostępnymi jezykami po kliknięciu linku do nieistniejącej podstrony w danym języku
+ -->
