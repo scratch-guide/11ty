@@ -21,5 +21,8 @@
   "homepage": "https://github.com/scratch-guide/11ty#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.3.2"
   }
 }

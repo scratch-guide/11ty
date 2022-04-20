@@ -1,4 +1,4 @@
 {
 	"layout": "base",
-	"permalink": "/{{ page.filePathStem | localizedPermalink }}/"
+	"permalink": "/{{ page.filePathStem | removeNavOrder | localizedPermalink }}/"
 }

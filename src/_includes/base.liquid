@@ -17,6 +17,9 @@
 		{% endfor %}
 		</ul>
 	</nav>
+	<nav>
+		{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+	</nav>
 	{{ content }}
 	<footer>
 		<div>
@@ -27,3 +30,8 @@
 </body>
 
 </html>
+<!-- 
+	przekierowanie:
+	a) strona 404 z przekazywaniem danych przez localStorage
+	b) okno dialogowe z dostępnymi jezykami po kliknięciu linku do nieistniejącej podstrony w danym języku
+ -->
