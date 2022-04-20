@@ -10,10 +10,12 @@ body {
 
 .main-wrapper {
 	display: flex;
+	flex-flow: row nowrap;
 }
 
 nav.navbar {
 	width: 30ch;
+	flex: none;
 	border-right: 1px solid black;
 	padding: 0.5em;
 }
@@ -55,7 +57,7 @@ nav.navbar a:hover {
 }
 
 main {
-	width: 100%;
+	flex: auto;
 }
 
 .content-wrapper {
