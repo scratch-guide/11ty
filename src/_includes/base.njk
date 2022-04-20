@@ -12,11 +12,14 @@
 <body>
 	<div class="main-wrapper">
 		<nav class="navbar">
-			{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+			{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+				activeAnchorClass: "current-page",
+				activeKey: eleventyNavigation.key
+			}) | safe }}
 		</nav>
 		<main>
 			<div class="content-wrapper">
-				{{ content }}
+				{{ content | safe }}
 			</div>
 		</main>
 	</div>
