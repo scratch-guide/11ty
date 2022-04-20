@@ -1,6 +1,7 @@
 /** @type {import('../_types/eleventy').EleventyComputed} */
 module.exports = {
 	eleventyNavigation: {
+		title: data => data.title,
 		key: data => {
 			console.log(data)
 			return data.page.filePathStem.match(/([\w-]+)\/\w+$/)?.[1] || 'Home';
