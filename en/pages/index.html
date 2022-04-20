@@ -5,23 +5,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> | </title>
+	<title>Example Page 1 | </title>
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-	<nav>
-		<ul>
-		
-			<li><a href="/en/">/en/</a></li>
-		
-			<li><a href="/en/pages/">/en/pages/</a></li>
-		
-		</ul>
-	</nav>
-	<h1>Page 1</h1>
+	<div class="main-wrapper">
+		<nav class="navbar">
+			<ul><li><a href="/en/">Home</a></li>
+<li><a href="/en/pages/" class="current-page">Example Page 1</a></li>
+<li><a href="/en/more-pages/">Example Page 2</a><ul><li><a href="/en/more-pages/1-sub-page/">Example Sub Page</a><ul><li><a href="/en/more-pages/1-sub-page/1-sub-sub-page/">Example Sub Sub Page</a></li></ul></li></ul></li></ul>
+		</nav>
+		<main>
+			<div class="content-wrapper">
+				<h1>Page 1</h1>
 <p>test</p>
 
+			</div>
+		</main>
+	</div>
 	<footer>
 		<div>
 			<p>&copy; 2022 </p>
@@ -31,3 +33,8 @@
 </body>
 
 </html>
+<!-- 
+	przekierowanie:
+	a) strona 404 z przekazywaniem danych przez localStorage
+	b) okno dialogowe z dostępnymi jezykami po kliknięciu linku do nieistniejącej podstrony w danym języku
+ -->
