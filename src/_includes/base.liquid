@@ -15,7 +15,9 @@
 			{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
 		</nav>
 		<main>
-			{{ content }}
+			<div class="content-wrapper">
+				{{ content }}
+			</div>
 		</main>
 	</div>
 	<footer>
