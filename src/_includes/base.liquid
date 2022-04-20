@@ -10,10 +10,14 @@
 </head>
 
 <body>
-	<nav>
-		{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
-	</nav>
-	{{ content }}
+	<div class="main-wrapper">
+		<nav class="navbar">
+			{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+		</nav>
+		<main>
+			{{ content }}
+		</main>
+	</div>
 	<footer>
 		<div>
 			<p>&copy; {% year %} {{ meta.siteName }}{% if meta.authorName %} • {{ meta.authorName }}{% endif %}</p>
