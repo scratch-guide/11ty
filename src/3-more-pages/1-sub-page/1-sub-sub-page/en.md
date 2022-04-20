@@ -1,4 +1,4 @@
 ---
-title: Sub Sub Page
+title: Example Sub Sub Page
 ---
 # Sub-sub page
