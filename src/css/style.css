@@ -56,12 +56,16 @@ nav.navbar a:hover {
 	background-color: #ddd;
 }
 
+nav.navbar a.current-page {
+	color: #086;
+}
+
 main {
 	flex: auto;
 }
 
 .content-wrapper {
-	width: clamp(40ch, 80%, 80ch);
+	width: clamp(40ch, 80%, 120ch);
 	margin: auto;
 	padding: 1em;
 }
