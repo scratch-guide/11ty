@@ -22,6 +22,7 @@ module.exports = function(config) {
 		dir: {
 			input: 'src',
 			output: 'build'
-		}
+		},
+		pathPrefix: '/11ty/'
 	}
 }
